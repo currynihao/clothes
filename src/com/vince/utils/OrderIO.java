@@ -17,7 +17,7 @@ public class OrderIO {
     }
 
     public List<Order> list() throws  BusinessException{
-        //readOrders();
+        readOrders();
         return orders;
     }
 

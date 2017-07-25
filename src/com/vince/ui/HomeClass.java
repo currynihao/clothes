@@ -22,15 +22,19 @@ public class HomeClass extends BaseClass {
     private OrderService orderService = new OrderServiceImpl();
     private ClothesService clothesService = new ClothesServiceImpl();
 
-    public void show(){
+    public void show() {
         showProducts();
-        println("welcome:"+currUser.getUsername());
+        println("welcome:" + currUser.getUsername());
+        menu();
+    }
+
+    private void menu() {
         boolean flag = true;
-        while(flag){
+        while (flag) {
             println(getString("home.function"));
             println(getString("info.select"));
             String select = input.nextLine();
-            switch (select){
+            switch (select) {
                 case "1": //1、查询全部订单
                     findOrderList();
                     flag = false;
@@ -43,9 +47,12 @@ public class HomeClass extends BaseClass {
                     try {
                         buyProducts();
                         flag = false;
-                    }catch ( BusinessException e){
+                    } catch (BusinessException e) {
                         println(e.getMessage());
                     }
+                    break;
+                case "4": //显示商品
+                    show();
                     break;
                 case "0": //0、退出
                     flag = false;
@@ -60,15 +67,16 @@ public class HomeClass extends BaseClass {
 
     /**
      * 购买商品
+     *
      * @throws BusinessException
      */
-    private void buyProducts()throws BusinessException {
+    private void buyProducts() throws BusinessException {
         //生成订单
         boolean flag = true;
         int count = 1;
         float sum = 0.0f; //订单总金额
         Order order = new Order(); //生成的订单
-        while (flag){
+        while (flag) {
             println(getString("product.input.id"));
             String id = input.nextLine();
             println(getString("product.input.shoppingNum"));
@@ -77,21 +85,21 @@ public class HomeClass extends BaseClass {
             Clothes clothes = clothesService.findById(id);
 
             int num = Integer.parseInt(shoppingNum);
-            if(num>clothes.getNum()){
+            if (num > clothes.getNum()) {
                 throw new BusinessException("product.num.error");
             }
             //一条订单明细
-            clothes.setNum(clothes.getNum()-num);//减去库存
+            clothes.setNum(clothes.getNum() - num);//减去库存
             orderItem.setClothes(clothes);
             orderItem.setShoppingNum(num);
-            orderItem.setSum(clothes.getPrice()*num);
+            orderItem.setSum(clothes.getPrice() * num);
             sum += orderItem.getSum();
             orderItem.setItemId(count++);
             order.getOrderItemList().add(orderItem);
 
             println(getString("product.buy.continue"));
             String isBuy = input.nextLine();
-            switch (isBuy){
+            switch (isBuy) {
                 case "1":
                     flag = true;
                     break;
@@ -106,7 +114,7 @@ public class HomeClass extends BaseClass {
         order.setCreateDate(DateUtils.toDate(new Date()));
         order.setUserId(currUser.getId());
         order.setSum(sum);
-        order.setOrderId(orderService.list().size()+1);
+        order.setOrderId(orderService.list().size() + 1);
         orderService.buyProduct(order);
         clothesService.update();
         show();
@@ -117,17 +125,36 @@ public class HomeClass extends BaseClass {
 
     private void findOrderList() {
         List<Order> list = orderService.list();
-        for (Order o: list){
-            print("订单编号:"+ o.getOrderId());
-            print("\t 购买时间:"+o.getCreateDate());
-            println("\t 总金额:"+o.getSum());
+        for (Order o : list) {
+            print("订单编号:" + o.getOrderId());
+            print("\t 购买时间:" + o.getCreateDate());
+            println("\t 总金额:" + o.getSum());
             println("---------------------");
-            for (OrderItem item: o.getOrderItemList()){
-                println(item.toString());
-            }
+            ConsoleTable t = new ConsoleTable(8, true);
+            t.appendRow();
+            t.appendColumn("itemId")
+                    .appendColumn("brand")
+                    .appendColumn("style")
+                    .appendColumn("color")
+                    .appendColumn("size")
+                    .appendColumn("price")
+                    .appendColumn("description")
+                    .appendColumn("shoppingNum")
+                    .appendColumn("sum");
 
-            println("**********************");
-            show();
+            for (OrderItem item : o.getOrderItemList()) {
+                t.appendRow();
+                t.appendColumn(item.getItemId())
+                        .appendColumn(item.getClothes().getBrand())
+                        .appendColumn(item.getClothes().getStyle())
+                        .appendColumn(item.getClothes().getColor())
+                        .appendColumn(item.getClothes().getSize())
+                        .appendColumn(item.getClothes().getPrice())
+                        .appendColumn(item.getClothes().getDescription())
+                        .appendColumn(item.getShoppingNum())
+                        .appendColumn(item.getSum());
+            }
+            menu();
         }
     }
 
@@ -143,7 +170,7 @@ public class HomeClass extends BaseClass {
                 .appendColumn("num")
                 .appendColumn("price")
                 .appendColumn("description");
-        for(Clothes c: list){
+        for (Clothes c : list) {
             t.appendRow();
             t.appendColumn(c.getId())
                     .appendColumn(c.getBrand())
