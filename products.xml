@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<list>
+<?xml version="1.0" encoding="utf-8" ?><list>
   <clothes id="A0001">
     <brand>VEROMODA</brand>
     <style>连衣裙</style>
@@ -50,7 +49,7 @@
     <style>连衣裙</style>
     <color>色</color>
     <size>宝蓝色</size>
-    <num>9</num>
+    <num>7</num>
     <price>199.0</price>
     <description>夏季宽松大码棉麻裙</description>
   </clothes>
