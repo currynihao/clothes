@@ -32,7 +32,7 @@ public class HomeClass extends BaseClass {
             String select = input.nextLine();
             switch (select){
                 case "1": //1、查询全部订单
-                    findList();
+                    findOrderList();
                     flag = false;
                     break;
                 case "2": //2、查找订单
@@ -115,7 +115,20 @@ public class HomeClass extends BaseClass {
     private void findOrderById() {
     }
 
-    private void findList() {
+    private void findOrderList() {
+        List<Order> list = orderService.list();
+        for (Order o: list){
+            print("订单编号:"+ o.getOrderId());
+            print("\t 购买时间:"+o.getCreateDate());
+            println("\t 总金额:"+o.getSum());
+            println("---------------------");
+            for (OrderItem item: o.getOrderItemList()){
+                println(item.toString());
+            }
+
+            println("**********************");
+            show();
+        }
     }
 
     private void showProducts() {

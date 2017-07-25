@@ -46,4 +46,13 @@ public class OrderItem implements Serializable{
     public OrderItem() {
     }
 
+    @Override
+    public String toString() {
+        return "OrderItem{" +
+                "itemId=" + itemId +
+                ", clothes=" + clothes +
+                ", shoppingNum=" + shoppingNum +
+                ", sum=" + sum +
+                '}';
+    }
 }
