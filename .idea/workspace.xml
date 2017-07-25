@@ -7,14 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="72c3c330-fcbd-4e78-95dc-5c804464d17a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/service/ClothesService.class" afterPath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/service/ClothesService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/service/impl/ClothesServiceImpl.class" afterPath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/service/impl/ClothesServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/ui/HomeClass.class" afterPath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/ui/HomeClass.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/res/r.properties" afterPath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/res/r.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/res/r_temp.properties" afterPath="$PROJECT_DIR$/out/production/ClothesSupermarketSystem/com/vince/res/r_temp.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vince/res/r.properties" afterPath="$PROJECT_DIR$/src/com/vince/res/r.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vince/service/impl/OrderServiceImpl.java" afterPath="$PROJECT_DIR$/src/com/vince/service/impl/OrderServiceImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/vince/ui/HomeClass.java" afterPath="$PROJECT_DIR$/src/com/vince/ui/HomeClass.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -36,7 +30,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="r.properties" pinned="false" current-in-tab="true">
+      <file leaf-file-name="r.properties" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vince/res/r.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="393">
@@ -85,8 +79,8 @@
       <file leaf-file-name="ClothesIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vince/utils/ClothesIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-234">
-              <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="37" />
+            <state relative-caret-position="312">
+              <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +91,8 @@
       <file leaf-file-name="OrderIO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/vince/utils/OrderIO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="37" />
+            <state relative-caret-position="335">
+              <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,11 +112,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="HomeClass.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="HomeClass.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/vince/ui/HomeClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="118">
-              <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="45" selection-end-line="108" selection-end-column="51" />
+            <state relative-caret-position="144">
+              <caret line="109" column="23" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -185,9 +179,9 @@
         <option value="$PROJECT_DIR$/src/com/vince/utils/ClothesIO.java" />
         <option value="$PROJECT_DIR$/src/com/vince/service/impl/ClothesServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/vince/service/ClothesService.java" />
-        <option value="$PROJECT_DIR$/src/com/vince/ui/HomeClass.java" />
         <option value="$PROJECT_DIR$/src/com/vince/service/impl/OrderServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/com/vince/res/r.properties" />
+        <option value="$PROJECT_DIR$/src/com/vince/ui/HomeClass.java" />
       </list>
     </option>
   </component>
@@ -659,7 +653,14 @@
       <option name="project" value="LOCAL" />
       <updated>1500951812190</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update product buy 2">
+      <created>1500952389537</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1500952389537</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -681,12 +682,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3288364" sideWeight="0.503125" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13827993" sideWeight="0.496875" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13827993" sideWeight="0.496875" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14165261" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2140625" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1859375" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -748,7 +749,8 @@
     <MESSAGE value="r.properties add home.function" />
     <MESSAGE value="打包" />
     <MESSAGE value="update product buy" />
-    <option name="LAST_COMMIT_MESSAGE" value="update product buy" />
+    <MESSAGE value="update product buy 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="update product buy 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1110,30 +1112,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vince/utils/ClothesIO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234">
-          <caret line="9" column="37" lean-forward="false" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/vince/service/impl/ClothesServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="304">
           <caret line="15" column="50" lean-forward="false" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vince/ui/HomeClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="108" column="51" lean-forward="false" selection-start-line="108" selection-start-column="45" selection-end-line="108" selection-end-column="51" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1150,21 +1132,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vince/utils/OrderIO.java">
+    <entry file="file://$PROJECT_DIR$/src/com/vince/res/r.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="10" column="37" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="37" />
+        <state relative-caret-position="393">
+          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vince/utils/ClothesIO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="29" lean-forward="false" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/vince/res/r.properties">
+    <entry file="file://$PROJECT_DIR$/src/com/vince/utils/OrderIO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="335">
+          <caret line="50" column="33" lean-forward="true" selection-start-line="50" selection-start-column="33" selection-end-line="50" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/vince/ui/HomeClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="109" column="23" lean-forward="false" selection-start-line="109" selection-start-column="23" selection-end-line="109" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
