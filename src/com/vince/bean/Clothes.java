@@ -7,6 +7,8 @@ import java.io.Serializable;
  */
 public class Clothes implements Serializable{
 
+    private static final long  serialVersionUID = 1L;
+
     private String id; //商品编号
     private String brand; //品牌
     private String style; //款式

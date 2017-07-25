@@ -10,6 +10,7 @@ import java.util.List;
  * Created by vince on 2017/7/11.
  */
 public class Order implements Serializable{
+    private static final long  serialVersionUID = 1L;
     private int orderId;
     private List<OrderItem> orderItemList = new ArrayList<>();
     private String createDate;

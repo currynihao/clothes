@@ -6,6 +6,7 @@ import java.io.Serializable;
  * Created by vince on 2017/7/11.
  */
 public class OrderItem implements Serializable{
+    private static final long  serialVersionUID = 1L;
     private int itemId;
     private Clothes clothes;//商品
     private int shoppingNum;
