@@ -125,11 +125,11 @@ public class HomeClass extends BaseClass {
 
     private void findOrderList() {
         List<Order> list = orderService.list();
+
         for (Order o : list) {
             print("订单编号:" + o.getOrderId());
             print("\t 购买时间:" + o.getCreateDate());
             println("\t 总金额:" + o.getSum());
-            println("---------------------");
             ConsoleTable t = new ConsoleTable(9, true);
             t.appendRow();
             t.appendColumn("itemId")
@@ -154,6 +154,7 @@ public class HomeClass extends BaseClass {
                         .appendColumn(item.getShoppingNum())
                         .appendColumn(item.getSum());
             }
+            println(t.toString());
             menu();
         }
     }

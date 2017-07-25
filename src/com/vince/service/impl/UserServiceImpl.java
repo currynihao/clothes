@@ -28,6 +28,7 @@ public class UserServiceImpl implements UserService {
         }
 
         UserIO userIO = new UserIO();
+        userIO.readUsers();
         User user = userIO.findByUsernameAndPassword(username,password);
 
         return user;
