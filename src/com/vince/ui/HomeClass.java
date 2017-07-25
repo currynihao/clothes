@@ -121,42 +121,51 @@ public class HomeClass extends BaseClass {
     }
 
     private void findOrderById() {
+        println(getString("product.order.oid"));
+        String oid = input.nextLine();
+        Order order = orderService.findById(Integer.parseInt(oid));
+        showOrder(order);
+
     }
 
+    //查询订单列表
     private void findOrderList() {
         List<Order> list = orderService.list();
-
         for (Order o : list) {
-            print("订单编号:" + o.getOrderId());
-            print("\t 购买时间:" + o.getCreateDate());
-            println("\t 总金额:" + o.getSum());
-            ConsoleTable t = new ConsoleTable(9, true);
-            t.appendRow();
-            t.appendColumn("itemId")
-                    .appendColumn("brand")
-                    .appendColumn("style")
-                    .appendColumn("color")
-                    .appendColumn("size")
-                    .appendColumn("price")
-                    .appendColumn("description")
-                    .appendColumn("shoppingNum")
-                    .appendColumn("sum");
-
-            for (OrderItem item : o.getOrderItemList()) {
-                t.appendRow();
-                t.appendColumn(item.getItemId())
-                        .appendColumn(item.getClothes().getBrand())
-                        .appendColumn(item.getClothes().getStyle())
-                        .appendColumn(item.getClothes().getColor())
-                        .appendColumn(item.getClothes().getSize())
-                        .appendColumn(item.getClothes().getPrice())
-                        .appendColumn(item.getClothes().getDescription())
-                        .appendColumn(item.getShoppingNum())
-                        .appendColumn(item.getSum());
-            }
-            println(t.toString());
+            showOrder(o);
             menu();
         }
+    }
+
+    private void showOrder(Order o) {
+        print("订单编号:" + o.getOrderId());
+        print("\t 购买时间:" + o.getCreateDate());
+        println("\t 总金额:" + o.getSum());
+        ConsoleTable t = new ConsoleTable(9, true);
+        t.appendRow();
+        t.appendColumn("itemId")
+                .appendColumn("brand")
+                .appendColumn("style")
+                .appendColumn("color")
+                .appendColumn("size")
+                .appendColumn("price")
+                .appendColumn("description")
+                .appendColumn("shoppingNum")
+                .appendColumn("sum");
+
+        for (OrderItem item : o.getOrderItemList()) {
+            t.appendRow();
+            t.appendColumn(item.getItemId())
+                    .appendColumn(item.getClothes().getBrand())
+                    .appendColumn(item.getClothes().getStyle())
+                    .appendColumn(item.getClothes().getColor())
+                    .appendColumn(item.getClothes().getSize())
+                    .appendColumn(item.getClothes().getPrice())
+                    .appendColumn(item.getClothes().getDescription())
+                    .appendColumn(item.getShoppingNum())
+                    .appendColumn(item.getSum());
+        }
+        println(t.toString());
     }
 
     private void showProducts() {
