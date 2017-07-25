@@ -138,8 +138,8 @@ public class HomeClass extends BaseClass {
         List<Order> list = orderService.list();
         for (Order o : list) {
             showOrder(o);
-            menu();
         }
+        menu();
     }
 
     private void showOrder(Order o) {
