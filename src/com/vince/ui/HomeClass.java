@@ -125,6 +125,7 @@ public class HomeClass extends BaseClass {
         String oid = input.nextLine();
         Order order = orderService.findById(Integer.parseInt(oid));
         showOrder(order);
+        menu();
 
     }
 
