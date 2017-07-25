@@ -124,7 +124,11 @@ public class HomeClass extends BaseClass {
         println(getString("product.order.oid"));
         String oid = input.nextLine();
         Order order = orderService.findById(Integer.parseInt(oid));
-        showOrder(order);
+        if (order!=null){
+            showOrder(order);
+        }else{
+            println(getString("product.order.error"));
+        }
         menu();
 
     }
