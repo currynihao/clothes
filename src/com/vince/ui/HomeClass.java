@@ -130,7 +130,7 @@ public class HomeClass extends BaseClass {
             print("\t 购买时间:" + o.getCreateDate());
             println("\t 总金额:" + o.getSum());
             println("---------------------");
-            ConsoleTable t = new ConsoleTable(8, true);
+            ConsoleTable t = new ConsoleTable(9, true);
             t.appendRow();
             t.appendColumn("itemId")
                     .appendColumn("brand")
