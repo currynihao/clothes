@@ -121,7 +121,7 @@ public class HomeClass extends BaseClass {
     }
 
     private void findOrderById() {
-        println(getString("product.order.oid"));
+        println(getString("product.order.input.oid"));
         String oid = input.nextLine();
         Order order = orderService.findById(Integer.parseInt(oid));
         if (order!=null){
@@ -143,9 +143,9 @@ public class HomeClass extends BaseClass {
     }
 
     private void showOrder(Order o) {
-        print("订单编号:" + o.getOrderId());
-        print("\t 购买时间:" + o.getCreateDate());
-        println("\t 总金额:" + o.getSum());
+        print(getString("product.order.oid") + o.getOrderId());
+        print(getString("product.order.createDate")+"\t " + o.getCreateDate());
+        println(getString("product.order.sum")+"\t " + o.getSum());
         ConsoleTable t = new ConsoleTable(9, true);
         t.appendRow();
         t.appendColumn("itemId")
