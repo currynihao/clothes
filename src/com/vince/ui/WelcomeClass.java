@@ -11,7 +11,7 @@ public class WelcomeClass extends BaseClass {
     public void start(){
         println(getString("info.welcome"));
         UserIO userIO = new UserIO();
-        userIO.readUsers();
+        //userIO.readUsers();
         boolean flag = true;
         while(flag){
             println(getString("info.login.reg"));
@@ -32,7 +32,7 @@ public class WelcomeClass extends BaseClass {
                     try {
                         new RegisterClass().register();
                         println(getString("reg.success"));
-                        flag = false;
+                        flag = true;
                     }catch (BusinessException e){
                         println(getString("reg.error"));
                     }
