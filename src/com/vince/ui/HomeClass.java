@@ -56,6 +56,7 @@ public class HomeClass extends BaseClass {
                     break;
                 case "0": //0、退出
                     flag = false;
+                    println(getString("info.exit"));
                     System.exit(0);
                     break;
                 default:
