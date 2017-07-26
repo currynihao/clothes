@@ -144,8 +144,8 @@ public class HomeClass extends BaseClass {
 
     private void showOrder(Order o) {
         print(getString("product.order.oid") + o.getOrderId());
-        print(getString("product.order.createDate")+"\t " + o.getCreateDate());
-        println(getString("product.order.sum")+"\t " + o.getSum());
+        print("\t"+getString("product.order.createDate") + o.getCreateDate());
+        println("\t"+getString("product.order.sum") + o.getSum());
         ConsoleTable t = new ConsoleTable(9, true);
         t.appendRow();
         t.appendColumn("itemId")
