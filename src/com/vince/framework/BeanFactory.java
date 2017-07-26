@@ -9,6 +9,9 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.Iterator;
 
+/**
+ * 创建Bean的factory类
+ */
 public class BeanFactory {
 
     private Iterator<Element> iterator = null;

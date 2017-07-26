@@ -9,6 +9,10 @@ import com.vince.utils.BusinessException;
  * Created by vince on 2017/7/19.
  */
 public class LoginClass extends BaseClass {
+    private UserService userService;
+    public LoginClass(){
+        userService = (UserService) beanFactory.getBean("userService");
+    }
 
     public void login()throws BusinessException{
         println(getString("input.username"));
@@ -16,7 +20,7 @@ public class LoginClass extends BaseClass {
         println(getString("input.password"));
         String password = input.nextLine();
 
-        UserService userService = new UserServiceImpl();
+//        UserService userService = new UserServiceImpl();
         User user = userService.login(username,password);
 
         if(user!=null){

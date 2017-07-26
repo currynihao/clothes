@@ -19,8 +19,13 @@ import java.util.List;
  */
 public class HomeClass extends BaseClass {
 
-    private OrderService orderService = new OrderServiceImpl();
-    private ClothesService clothesService = new ClothesServiceImpl();
+    private OrderService orderService;
+    private ClothesService clothesService;
+
+    public HomeClass(){
+        orderService = (OrderService)beanFactory.getBean("orderService");
+        clothesService = (ClothesService)beanFactory.getBean("clothesService");
+    }
 
     public void show() {
         showProducts();
