@@ -9,7 +9,7 @@ import com.vince.utils.ProductsXmlUtils;
 import java.util.List;
 
 /**
- * Created by vince on 2017/7/20.
+ * Created by vince on 2019/7/20.
  */
 public class ClothesServiceImpl implements ClothesService {
 

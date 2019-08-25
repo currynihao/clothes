@@ -6,7 +6,7 @@ import com.vince.utils.BusinessException;
 import java.util.List;
 
 /**
- * Created by vince on 2017/7/20.
+ * Created by vince on 2019/7/20.
  */
 public interface ClothesService {
     public List<Clothes> list()throws BusinessException;

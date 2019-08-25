@@ -4,7 +4,7 @@ import com.vince.bean.User;
 import com.vince.utils.BusinessException;
 
 /**
- * Created by vince on 2017/7/19.
+ * Created by vince on 2019/7/19.
  */
 public interface UserService {
 

@@ -3,7 +3,7 @@ package com.vince.bean;
 import java.io.Serializable;
 
 /**
- * Created by vince on 2017/7/11.
+ * Created by vince on 2019/7/11.
  */
 public class User implements Serializable{
 

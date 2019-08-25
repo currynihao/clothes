@@ -4,7 +4,7 @@ import com.vince.utils.BusinessException;
 import com.vince.utils.UserIO;
 
 /**
- * Created by vince on 2017/7/18.
+ * Created by vince on 2019/7/18.
  */
 public class WelcomeClass extends BaseClass {
 

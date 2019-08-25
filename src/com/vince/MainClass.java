@@ -4,7 +4,7 @@ import com.vince.ui.WelcomeClass;
 import com.vince.utils.UserIO;
 
 /**
- * Created by vince on 2017/7/18.
+ * Created by vince on 2019/7/18.
  * 程序的入口类
  */
 public class MainClass {

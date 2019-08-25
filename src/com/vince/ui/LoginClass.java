@@ -6,7 +6,7 @@ import com.vince.service.impl.UserServiceImpl;
 import com.vince.utils.BusinessException;
 
 /**
- * Created by vince on 2017/7/19.
+ * Created by vince on 2019/7/19.
  */
 public class LoginClass extends BaseClass {
     private UserService userService;

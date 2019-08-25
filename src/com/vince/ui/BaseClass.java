@@ -7,7 +7,7 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 /**
- * Created by vince on 2017/7/18.
+ * Created by vince on 2019/7/18.
  */
 public abstract class BaseClass {
     protected static Scanner input = new Scanner(System.in);

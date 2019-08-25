@@ -3,7 +3,7 @@ package com.vince.bean;
 import java.io.Serializable;
 
 /**
- * Created by vince on 2017/7/10.
+ * Created by vince on 2019/7/10.
  */
 public class Clothes implements Serializable{
 
